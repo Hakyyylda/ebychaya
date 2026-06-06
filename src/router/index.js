@@ -1,0 +1,51 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import MainLayout from '@/layouts/MainLayout.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (to.hash) return { el: to.hash, behavior: 'smooth' }
+    return { top: 0 }
+  },
+  routes: [
+    {
+      path: '/',
+      component: MainLayout,
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: () => import('@/views/HomeView.vue'),
+        },
+        {
+          path: 'catalog',
+          name: 'catalog',
+          component: () => import('@/views/CatalogView.vue'),
+        },
+        {
+          path: 'game/:slug',
+          name: 'game',
+          component: () => import('@/views/GameView.vue'),
+        },
+        {
+          path: 'cart',
+          name: 'cart',
+          component: () => import('@/views/CartView.vue'),
+        },
+        {
+          path: 'events',
+          name: 'events',
+          component: () => import('@/views/EventsView.vue'),
+        },
+        {
+          path: 'about',
+          name: 'about',
+          component: () => import('@/views/AboutView.vue'),
+        },
+      ],
+    },
+  ],
+})
+
+export default router
