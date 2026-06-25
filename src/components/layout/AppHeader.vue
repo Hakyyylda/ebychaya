@@ -9,7 +9,10 @@ const { count } = useCart()
 const links = [
   { name: 'home', label: 'Главная', to: '/' },
   { name: 'catalog', label: 'Каталог', to: '/catalog' },
+  { name: 'reviews', label: 'Отзывы', to: '/reviews' },
+  { name: 'blog', label: 'Блог', to: '/blog' },
   { name: 'events', label: 'События', to: '/events' },
+  { name: 'jobs', label: 'Вакансии', to: '/jobs' },
   { name: 'about', label: 'О нас', to: '/about' },
 ]
 </script>
@@ -36,13 +39,13 @@ const links = [
         </RouterLink>
       </nav>
 
+      <RouterLink to="/catalog" class="btn btn-outline header__cta">
+        В каталог
+      </RouterLink>
+
       <RouterLink to="/cart" class="header__cart" aria-label="Корзина">
         <span class="header__cart-label">Корзина</span>
         <span v-if="count" class="header__cart-badge">{{ count }}</span>
-      </RouterLink>
-
-      <RouterLink to="/catalog" class="btn btn-primary header__cta">
-        В каталог
       </RouterLink>
     </div>
   </header>
@@ -125,16 +128,15 @@ const links = [
   height: 42px;
   padding: 0 1rem 0 0.9rem;
   border-radius: 999px;
-  color: var(--color-cream);
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
+  color: #1a1208;
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
   font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.2s, border-color 0.2s, transform 0.2s, background 0.2s;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
 }
 .header__cart:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--color-accent-hover);
   transform: translateY(-1px);
 }
 .header__cart-label {

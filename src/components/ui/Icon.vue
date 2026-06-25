@@ -189,6 +189,20 @@ const props = defineProps({
       <path d="M3 20v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1" />
       <path d="M15 20v-1a3.5 3.5 0 0 1 3.5-3.5H19a3 3 0 0 1 3 3v1.5" />
     </g>
+    <g v-else-if="name === 'star'">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor" stroke="none" />
+    </g>
+    <g v-else-if="name === 'star-empty'">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </g>
+    <g v-else-if="name === 'heart'">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+    </g>
+    <g v-else-if="name === 'clock-arrow'">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+      <path d="M5 3 3 5l2 2" />
+    </g>
   </svg>
 </template>
 

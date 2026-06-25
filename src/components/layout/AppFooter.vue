@@ -13,7 +13,10 @@
         <ul>
           <li><RouterLink to="/">Главная</RouterLink></li>
           <li><RouterLink to="/catalog">Каталог</RouterLink></li>
+          <li><RouterLink to="/reviews">Отзывы</RouterLink></li>
+          <li><RouterLink to="/blog">Блог</RouterLink></li>
           <li><RouterLink to="/events">События</RouterLink></li>
+          <li><RouterLink to="/jobs">Вакансии</RouterLink></li>
           <li><RouterLink to="/about">О нас</RouterLink></li>
         </ul>
       </div>
