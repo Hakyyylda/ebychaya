@@ -53,11 +53,26 @@ const router = createRouter({
           name: 'blog',
           component: () => import('@/views/BlogView.vue'),
         },
-        {
-          path: 'jobs',
-          name: 'jobs',
-          component: () => import('@/views/JobsView.vue'),
-        },
+          {
+            path: 'jobs',
+            name: 'jobs',
+            component: () => import('@/views/JobsView.vue'),
+          },
+          {
+            path: 'promo',
+            name: 'promo',
+            component: () => import('@/views/PromoView.vue'),
+          },
+          {
+            path: 'delivery',
+            name: 'delivery',
+            component: () => import('@/views/DeliveryView.vue'),
+          },
+          {
+            path: 'faq',
+            name: 'faq',
+            component: () => import('@/views/FaqView.vue'),
+          },
       ],
     },
   ],
