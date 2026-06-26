@@ -19,9 +19,9 @@ const posts = [
 
     <div style="padding:30px 0;">
       <div class="container">
-        <div v-for="post in posts" :key="post.title" class="hover-up" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:15px;margin-bottom:10px;">
+        <div v-for="post in posts" :key="post.title" class="hover-up" style="background:#2a2a3e;border:1px solid #3a3a4e;border-radius:8px;padding:15px;margin-bottom:10px;">
           <h3 style="font-size:16px;">{{ post.title }}</h3>
-          <p style="font-size:13px;color:#999;margin-top:5px;">{{ post.date }}</p>
+          <p style="font-size:13px;color:#777;margin-top:5px;">{{ post.date }}</p>
         </div>
       </div>
     </div>

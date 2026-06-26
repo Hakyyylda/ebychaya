@@ -27,12 +27,12 @@ const game = computed(() => getGameBySlug(route.params.slug))
           <div style="flex:1;">
             <p style="color:#667eea;font-size:12px;text-transform:uppercase;letter-spacing:1px;">{{ game.category }}</p>
             <h1 style="font-size:28px;margin:5px 0;">{{ game.title }}</h1>
-            <p style="color:#666;margin:10px 0 15px;">{{ game.short }}</p>
+            <p style="color:#aaa;margin:10px 0 15px;">{{ game.short }}</p>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;">
-              <div><span style="font-size:12px;color:#999;">ИГРОКИ</span><br><strong>{{ game.players }}</strong></div>
-              <div><span style="font-size:12px;color:#999;">ВРЕМЯ</span><br><strong>{{ game.time }}</strong></div>
-              <div><span style="font-size:12px;color:#999;">ВОЗРАСТ</span><br><strong>{{ game.age }}</strong></div>
-              <div><span style="font-size:12px;color:#999;">СЛОЖНОСТЬ</span><br><strong>{{ game.complexity }}</strong></div>
+              <div><span style="font-size:12px;color:#777;">ИГРОКИ</span><br><strong>{{ game.players }}</strong></div>
+              <div><span style="font-size:12px;color:#777;">ВРЕМЯ</span><br><strong>{{ game.time }}</strong></div>
+              <div><span style="font-size:12px;color:#777;">ВОЗРАСТ</span><br><strong>{{ game.age }}</strong></div>
+              <div><span style="font-size:12px;color:#777;">СЛОЖНОСТЬ</span><br><strong>{{ game.complexity }}</strong></div>
             </div>
             <div style="display:flex;align-items:center;gap:20px;">
               <span style="font-size:24px;font-weight:bold;color:#667eea;">{{ formatPrice(game.price) }}</span>
@@ -43,10 +43,10 @@ const game = computed(() => getGameBySlug(route.params.slug))
 
         <div style="margin-top:40px;">
           <h2 style="font-size:20px;margin-bottom:10px;">Об игре</h2>
-          <p style="color:#666;line-height:1.7;font-size:15px;">{{ game.description }}</p>
+          <p style="color:#aaa;line-height:1.7;font-size:15px;">{{ game.description }}</p>
           <h3 style="font-size:16px;margin:20px 0 10px;">Механики</h3>
           <ul style="padding-left:20px;">
-            <li v-for="m in game.mechanics" :key="m" style="margin:3px 0;color:#555;">{{ m }}</li>
+            <li v-for="m in game.mechanics" :key="m" style="margin:3px 0;color:#aaa;">{{ m }}</li>
           </ul>
         </div>
       </div>

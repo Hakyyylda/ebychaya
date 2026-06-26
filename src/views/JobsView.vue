@@ -17,7 +17,7 @@ const jobs = [
 
     <div style="padding:30px 0;">
       <div class="container">
-        <div v-for="job in jobs" :key="job.title" class="hover-up" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:15px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
+        <div v-for="job in jobs" :key="job.title" class="hover-up" style="background:#2a2a3e;border:1px solid #3a3a4e;border-radius:8px;padding:15px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
           <h3 style="font-size:16px;">{{ job.title }}</h3>
           <span style="font-weight:bold;color:#667eea;">{{ job.salary }}</span>
         </div>

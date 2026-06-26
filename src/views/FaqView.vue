@@ -23,9 +23,9 @@ const faq = [
 
     <div style="padding:30px 0;">
       <div class="container" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;">
-        <div v-for="(item, i) in faq" :key="i" class="hover-up" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:15px;">
+        <div v-for="(item, i) in faq" :key="i" class="hover-up" style="background:#2a2a3e;border:1px solid #3a3a4e;border-radius:8px;padding:15px;">
           <h3 style="font-size:16px;color:#7c3aed;">{{ item.q }}</h3>
-          <p style="color:#666;margin-top:5px;">{{ item.a }}</p>
+          <p style="color:#aaa;margin-top:5px;">{{ item.a }}</p>
         </div>
     </div>
   </div>

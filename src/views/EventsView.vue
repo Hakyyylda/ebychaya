@@ -17,10 +17,10 @@ const events = [
 
     <div style="padding:30px 0;">
       <div class="container">
-        <div v-for="event in events" :key="event.title" class="hover-up" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:15px;margin-bottom:10px;">
+        <div v-for="event in events" :key="event.title" class="hover-up" style="background:#2a2a3e;border:1px solid #3a3a4e;border-radius:8px;padding:15px;margin-bottom:10px;">
           <p style="font-size:12px;color:#667eea;font-weight:bold;">{{ event.date }}</p>
           <h3 style="font-size:18px;margin:5px 0;">{{ event.title }}</h3>
-          <p style="color:#888;">{{ event.time }}</p>
+          <p style="color:#aaa;">{{ event.time }}</p>
         </div>
       </div>
     </div>
